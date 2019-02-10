@@ -1,0 +1,44 @@
+{
+  "name": "IgniteBowserExt",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "classy-mst": "3.8.0",
+    "mobx": "5.9.0",
+    "mobx-react": "5.4.3",
+    "mobx-state-tree": "3.10.2",
+    "ramda": "0.26.1",
+    "react": "16.6.3",
+    "react-native": "0.58.3",
+    "react-native-paper": "2.10.1",
+    "react-native-root-toast": "3.0.2",
+    "react-native-vector-icons": "6.1.0",
+    "react-navigation": "2.16.0",
+    "reactotron-mst": "2.1.4",
+    "reactotron-react-native": "2.1.5",
+    "realm": "2.23.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "7.2.3",
+    "@babel/plugin-proposal-optional-catch-binding": "7.2.0",
+    "@babel/runtime": "7.3.1",
+    "@types/ramda": "0.25.47",
+    "@types/react": "16.7.20",
+    "@types/react-native": "0.57.28",
+    "@types/react-navigation": "2.13.9",
+    "babel-jest": "24.0.0",
+    "jest": "24.0.0",
+    "jsc-android": "236355.x.x",
+    "metro-react-native-babel-preset": "0.51.1",
+    "react-native-typescript-transformer": "1.2.11",
+    "react-test-renderer": "16.6.3",
+    "typescript": "3.3.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
