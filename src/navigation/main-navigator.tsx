@@ -1,13 +1,15 @@
-import {createStackNavigator} from "react-navigation"
-import {observer} from "mobx-react"
-import {NoteListScreen} from "../screens/note-list";
-import {NoteScreen} from "../screens/note";
+import { observer } from 'mobx-react'
+import { createStackNavigator } from 'react-navigation'
+import { NoteScreen } from '../screens/note'
+import { NoteListScreen } from '../screens/note-list'
 
-export const MainNavigator = observer(createStackNavigator({
+export const MainNavigator = observer(
+  createStackNavigator({
     NoteList: {
-        screen: NoteListScreen
+      screen: NoteListScreen,
     },
     Note: {
-        screen: NoteScreen
-    }
-}));
+      screen: NoteScreen,
+    },
+  }),
+)

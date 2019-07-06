@@ -1,20 +1,20 @@
-import {NoteStore} from "../stores/note-store";
-import {createContentStore} from "../../components/content-store";
-import {ConnectionError} from "../../components/utils/error-utils";
-
+import { createContentStore } from '../../components/content-store'
+import { ConnectionError } from '../../components/utils/error-utils'
+import { NoteStore } from '../stores/note-store'
 
 export class NoteListViewModel {
-    noteListRequest = createContentStore<void, ConnectionError>()
+  public noteListRequest = createContentStore<void, ConnectionError>()
 
-    constructor(private readonly noteStore: NoteStore) {
-        this.loadNoteList()
-    }
+  constructor(private readonly noteStore: NoteStore) {
+    this.loadNoteList()
+  }
 
-    loadNoteList = () => {
-        this.noteListRequest.setLoading()
+  public loadNoteList = () => {
+    this.noteListRequest.setLoading()
 
-        this.noteStore.fetchNoteList()
-            .then(this.noteListRequest.setData)
-            .catch(this.noteListRequest.setError)
-    }
+    this.noteStore
+      .fetchNoteList()
+      .then(this.noteListRequest.setData)
+      .catch(this.noteListRequest.setError)
+  }
 }

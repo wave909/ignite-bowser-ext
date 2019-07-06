@@ -1,15 +1,16 @@
-import {Instance, SnapshotOut, types} from "mobx-state-tree"
-import {RootNavigator, DEFAULT_STATE} from "../navigation/root-navigator";
-import {NoteStoreModel} from "../stores/note-store";
-import {getNavigationStoreModel} from "../../components/navigation/navigation-store";
+import { Instance, SnapshotOut, types } from 'mobx-state-tree'
+import { getNavigationStoreModel } from '../../components/navigation/navigation-store'
+import { DEFAULT_STATE, RootNavigator } from '../navigation/root-navigator'
+import { NoteStoreModel } from '../stores/note-store'
 
 /**
  * An RootStore model.
  */
-export const RootStoreModel = types.model("RootStore").props({
-    navigationStore: getNavigationStoreModel(RootNavigator, DEFAULT_STATE),
-    noteStore: NoteStoreModel,
-});
+// tslint:disable-next-line:variable-name
+export const RootStoreModel = types.model('RootStore').props({
+  navigationStore: getNavigationStoreModel(RootNavigator, DEFAULT_STATE),
+  noteStore: NoteStoreModel,
+})
 
 /**
  * The RootStore instance.

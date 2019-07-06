@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-config-prettier",
+    "tslint-plugin-prettier",
+    "tslint-react",
+    "tslint-config-airbnb"
+  ],
+  "rules": {
+    "no-console": false,
+    "object-literal-sort-keys": false,
+    "no-object-literal-type-assertion": false,
+    "no-empty-interface": false,
+    "import-name": false,
+    "interface-name": false,
+    "jsx-alignment": false,
+    "jsx-wrap-multiline": false,
+    "jsx-no-multiline-js": {
+      "options": true,
+      "severity": "warning"
+    },
+    "jsx-key": {
+      "options": true,
+      "severity": "warning"
+    },
+    "ter-arrow-parens": [true, "as-needed"],
+    "ter-func-call-spacing": [false],
+    "semicolon": [true, "never"]
+  },
+  "rulesDirectory": [
+    "tslint-plugin-prettier"
+  ]
+}
