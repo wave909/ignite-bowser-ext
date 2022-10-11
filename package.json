@@ -13,7 +13,7 @@
     "mobx-state-tree": "3.10.2",
     "ramda": "0.26.1",
     "react": "16.6.3",
-    "react-native": "0.58.3",
+    "react-native": "0.70.2",
     "react-native-paper": "2.10.1",
     "react-native-root-toast": "3.0.2",
     "react-native-vector-icons": "6.1.0",
